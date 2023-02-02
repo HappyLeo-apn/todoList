@@ -1,0 +1,43 @@
+dsfdsf
+// $posts = Post::orWhere('id', '<', '30')->orWhere('address', 'Katha')->get();
+        // $posts = Post::get()->last();
+        // $posts = Post::select('title')->get();
+        // $posts = Post::where('id','<','6' )->pluck('title');
+        // dd($posts[0]);
+        // $posts = Post::orWhere('address', 'Katha')->get()->random();
+        // $posts = Post::orderBy('price', 'desc')->get();
+        // $posts = Post::select('id', 'address', 'price')
+        //          ->whereBetween('price', ['3000', '40000'])
+        //          ->orderBy('price','desc')
+        //          ->get();
+        // $posts = Post::find(5);
+        // $posts = Post::where('address', 'Katha')->exists();
+        // $posts = Post::select('id', 'title as post_title', 'title' )->get()->toArray();
+        // $posts = Post::select('address', DB::raw('COUNT(address) as address_count' ), DB::raw('AVG(price) as total_price'))
+        // ->groupBy('address')
+        // ->get()
+        // ->toArray();
+
+        // $posts = Post::select('rating', DB::raw('COUNT(rating) as rating_count'), DB::raw('SUM(price) as total_price'))
+        //                ->groupBy('rating')
+        //                ->get()
+        //                ->toArray();
+
+
+        // dd($posts);
+        // // dd($posts[0]['title']);
+        // $posts = Post::get()->map(function($p){
+        //     $p->title = strtoupper($p->title);
+        //     $p->description = strtoupper($p->description);
+        //     return $p;
+        // });
+        // $posts = Post::paginate(5)->through(function($p){
+        //     $p->title = strtoupper($p->title);
+        //     $p->description = strtoupper($p->description);
+        //     return $p;
+        // });
+
+        //++++++++++++VERY IMPORTANT PART+++++++++++++OOOOOOOOOOOOOOOOOOOOOOOO@@@@@@@@@^^^^^^^^^^^^^^^
+
+        // $searchKey = $_REQUEST['key'];
+        // $posts = Post::where('title','like', '%'.$searchKey.'%')->get();
